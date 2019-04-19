@@ -29,26 +29,7 @@ regularizer = tf.contrib.layers.l2_regularizer(0.0001)
 
 def formats(idx):
     x = np.zeros(10)
-    if idx == 0:
-        x[0] = 1
-    elif idx ==1:
-        x[1] = 1
-    elif idx ==2:
-        x[2] = 1
-    elif idx ==3:
-        x[3] = 1
-    elif idx ==4:
-        x[4] = 1
-    elif idx ==5:
-        x[5] = 1
-    elif idx ==6:
-        x[6] = 1
-    elif idx ==7:
-        x[7] = 1
-    elif idx ==8:
-        x[8] = 1
-    elif idx ==9:
-        x[9] = 1
+    x[idx] = 1
     return x
 
 
@@ -177,7 +158,7 @@ with tf.name_scope('accuracy'):
     tf.summary.scalar('accuracy', accuracy)
 #定义一个函数，按批次取数据
 def next_batches(x_train, y_train, batch_size):
-    with tf.name_scope('accuracy'):
+    with tf.name_scope('disorder'):
         x_train, y_train = disorder(x_train, y_train)
         return x_train[:batch_size], y_train[:batch_size]
 
