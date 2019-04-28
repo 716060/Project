@@ -9,3 +9,5 @@ mp4是示范样例.
 附, 最好将麦克风设置为立体声混音, 可以减少噪音干扰, 增加准确率.
 
 数据集地址: 
+链接：https://pan.baidu.com/s/1ZngReavMs3_PxWGTC1P0rA 
+提取码：cqad 
