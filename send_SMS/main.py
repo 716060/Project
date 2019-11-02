@@ -10,7 +10,7 @@ def watch():
         os.system('adb shell input keyevent KEYCODE_BACK')
         time.sleep(600)
 
-def watch_time():
+def Main():
     global task_list, year, month, day, hour, minute, second
     task_list = [0, 0, 0]
     year, month, day, hour, minute, second = get_webservertime('www.baidu.com').split(' ')
@@ -19,4 +19,4 @@ def watch_time():
     watch_thread.start()
     task_thread.start()
 
-watch_time()
+Main()
