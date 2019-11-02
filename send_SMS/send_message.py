@@ -1,7 +1,7 @@
 import os
 import time
 
-def send(member=('张翔辰','18060995316')):
+def send(member=('张','180')):
     name, number = member
     message = name + ',今天要记得扫地哦！我是智能短信助手小协。'
     print(message)
